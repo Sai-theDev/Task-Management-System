@@ -1,0 +1,82 @@
+/* Container Styling */
+.edit-project-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .edit-project-container h1 {
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Form Styling */
+  .edit-project-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .edit-project-form label {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .edit-project-form input,
+  .edit-project-form select {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .edit-project-form input:focus,
+  .edit-project-form select:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 6px rgba(76, 175, 80, 0.3);
+  }
+  
+  /* Button Styling */
+  .edit-project-form button {
+    grid-column: span 2;
+    padding: 14px 24px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-project-form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Disabled Button */
+  .edit-project-form button:disabled {
+    background-color: #b2b2b2;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .edit-project-form {
+      grid-template-columns: 1fr;
+    }
+  
+    .edit-project-form button {
+      grid-column: span 1;
+    }
+  }
+  

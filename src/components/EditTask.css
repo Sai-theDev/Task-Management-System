@@ -1,0 +1,75 @@
+/* Container styling */
+.edit-task-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .edit-task-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 26px;
+    text-align: center;
+  }
+  
+  /* Form styling */
+  .edit-task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .edit-task-form label {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .edit-task-form input,
+  .edit-task-form select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+  }
+  
+  .edit-task-form input[type="date"] {
+    padding-left: 15px;
+  }
+  
+  .edit-task-form input:focus,
+  .edit-task-form select:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+  }
+  
+  .edit-task-form button {
+    padding: 12px 20px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-task-form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .edit-task-container {
+      padding: 15px;
+    }
+  
+    .edit-task-form {
+      gap: 10px;
+    }
+  }
+  

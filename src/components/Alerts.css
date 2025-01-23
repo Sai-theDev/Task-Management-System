@@ -1,0 +1,95 @@
+.alerts-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .alerts-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  /* Alert list styling */
+  .alerts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .alerts-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .alerts-list li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Alert text */
+  .alert-text {
+    font-size: 16px;
+    color: #555;
+    flex: 1;
+  }
+  
+  .alert-text.read {
+    color: #999;
+    text-decoration: line-through;
+  }
+  
+  /* Buttons */
+  .alerts-list button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mark-read-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .mark-read-button:hover {
+    background-color: #45a049;
+  }
+  
+  .delete-button {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .delete-button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .alerts-list li {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .alerts-list button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
