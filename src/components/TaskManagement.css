@@ -1,0 +1,121 @@
+/* Overall Container */
+.project-management-container {
+  padding: 20px;
+  background-color: #f4f5f7; /* Light gray background */
+  min-height: 100vh;
+}
+
+/* Header Section with Flexbox */
+.project-management-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #172b4d; /* Dark blue color */
+  margin: 0;
+}
+
+.create-project-link {
+  background-color: #0052cc; /* Jira's blue */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.create-project-link:hover {
+  background-color: #0065ff; /* Lighter blue on hover */
+}
+
+/* Table Styles */
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  table-layout: fixed; /* Ensures columns evenly distributed */
+}
+
+.project-table th,
+.project-table td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  word-wrap: break-word;
+}
+
+.project-table th {
+  background-color: #172b4d; /* Dark header background */
+  color: white;
+  font-weight: bold;
+}
+
+.project-table tr:hover {
+  background-color: #f5f5f5; /* Light hover effect */
+}
+
+.project-table tr:last-child {
+  border-bottom: none;
+}
+
+/* Status Tag Styles */
+.status-tag {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  color: white;
+}
+
+.status-tag.not-started {
+  background-color: #ffbf00; /* Yellow */
+}
+
+.status-tag.in-progress {
+  background-color: #0065ff; /* Blue */
+}
+
+.status-tag.completed {
+  background-color: #36b37e; /* Green */
+}
+
+/* Action Links and Buttons */
+.edit-link {
+  color: #0065ff;
+  text-decoration: none;
+  font-size: 14px;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: 1px solid #0065ff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.edit-link:hover {
+  background-color: #f1f6ff; /* Light blue background on hover */
+}
+
+.delete-button {
+  background-color: #ff3b30; /* Red */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #e60000; /* Darker red on hover */
+}
+
+/* Preventing extra space at the end of actions column */
+.project-table td:last-child {
+  padding-right: 10px; /* Reduced space */
+}
